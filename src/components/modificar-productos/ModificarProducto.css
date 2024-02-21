@@ -1,0 +1,120 @@
+.mod-product-form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: var(--negro);
+    width: 60%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border: 1px solid var(--secundario);
+    border-radius: .5rem;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.mod-product-form-label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: var(--blanco);
+}
+
+.mod-product-form-buton-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: var(--blanco);
+}
+
+.mod-product-form-buton {
+    max-width: 300px;
+    background-color: var(--primario);
+    color: var(--negro);
+    border: 1px solid var(--primario);
+}
+
+.mod-product-form-buton:hover {
+    background-color: var(--negro);
+    color: var(--primario);
+}
+
+.mod-product-form-text-area {
+    height: 5rem;
+    resize: vertical;
+}
+
+
+.mod-img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    flex-wrap: wrap;
+    position: relative;
+    height: auto;
+    width: 100%; 
+    overflow: hidden;
+    transition: .3s ease-in-out;
+    background-color: var(--blanco);
+    border: 1px solid var(--secundario);
+    border-radius: .5rem;
+    gap: 1rem;
+    position: relative;
+    height: auto;
+    width: 28%;
+    overflow: hidden;
+    transition: .3s ease-in-out;
+    margin: .5rem;
+}
+
+.mod-img {
+    height: auto;
+    max-width: 100%;
+}
+
+.mod-img-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--primario);
+    color: var(--negro);
+    width: 80%;
+    padding: 1rem 0rem;
+    border-radius: 0.3rem;
+    opacity: 0;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.mod-img-overlay:hover {
+    filter: saturate(250%);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.mod-img-container:hover .mod-img-overlay {
+    opacity: 1;
+}
+.eliminar {
+    background-color: red;
+    color: var(--blanco);
+    border: 1px solid red;
+}
+.eliminar:hover {
+    background-color: var(--negro);
+    color: var(--blanco);
+    border: 1px solid red;
+}

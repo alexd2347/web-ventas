@@ -1,0 +1,97 @@
+.mod-product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3rem 0rem;
+    z-index: 99;
+}
+
+.mod-product {
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0rem .3rem 2.5rem .3rem;
+    width: 230px;
+    height: 320px;
+    border-radius: .5rem;
+    text-align: center;
+    background-color: var(--negro);
+    transition: .3s ease-in-out;
+    position: relative;
+    border: 2px solid var(--gris);
+}
+
+.mod-product:hover {
+    background-color: var(--negro);
+    filter: saturate(150%);
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.mod-product-image-container {
+    width: 100%;
+    height: 290px;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    overflow: hidden;
+}
+
+.mod-product-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.mod-product-name {
+    font-size: 1.2rem;
+    color: var(--secundario);
+    margin: 0;
+    padding: 0;
+}
+
+.mod-product:hover .product-name {
+    color: var(--secundario);
+}
+
+.mod-product-description {
+    font-size: .8rem;
+    color: var(--gris);
+    margin: 0;
+    padding: 0rem 1rem;
+}
+
+.mod-product-price {
+    font-size: 1rem;
+    color: var(--primario);
+    margin: 0;
+    padding: 0;
+    margin-bottom: .5rem;
+}
+
+.mod-product:hover .wel-product-price {
+    color: var(--primario);
+}
+
+.mod-promotion-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--primario);
+    color: var(--negro);
+    padding: 0.2rem 0.5rem;
+    border-top-left-radius: 0.3rem;
+}
+
+.mod-promotion-text {
+    margin: 0;
+}
+
+.mod-product-link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mod-product-link:hover {
+    text-decoration: none;
+}

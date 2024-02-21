@@ -1,0 +1,101 @@
+.product-form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: var(--negro);
+    width: 60%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border: 1px solid var(--secundario);
+    border-radius: .5rem;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.product-form-label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: var(--blanco);
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+.product-form-label input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: .4rem .8rem;
+    border-radius: .2rem;
+    box-sizing: border-box;
+    color: var(--negro);
+    font-size: .9rem;
+    appearance: none;
+    outline: none;
+}
+
+.product-form-label input:focus {
+    border-color: var(--secundario);
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+.product-form-buton-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: var(--blanco);
+}
+
+.product-form-buton {
+    max-width: 300px;
+    background-color: var(--primario);
+    color: var(--negro);
+    border: 1px solid var(--primario);
+}
+
+.product-form-buton:hover {
+    background-color: var(--negro);
+    color: var(--primario);
+}
+
+.product-form-text-area {
+    resize: vertical;
+    height: 5rem;
+}
+
+.product-form-text-area:focus {
+    border-color: var(--secundario);
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+
+.producto-agregado-mensaje {
+    width: 60%;
+    padding: 1rem;
+    height: auto;
+    margin: 1rem;
+    border-radius: .5rem;
+    background-color: var(--secundario);
+    color: var(--blanco);
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 30rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
